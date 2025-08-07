@@ -1,5 +1,6 @@
 name: Deploy on Push to Main
 # only run on push to main (merges)
+# comment for push trigger.
 on:
   push:
     branches: [ main ]
