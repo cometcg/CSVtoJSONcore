@@ -54,7 +54,7 @@ jobs:
 
     # Publishes the app to the staging slot
     - name: Azure CLI Publish
-      run: az webapp deployment source config-zip -g rgDoNotDeleteDemos -n ${{secrets.APP_NAME}} --slot stage --src ${{env.DOTNET_ROOT}}/myapp/myapp.zip
+      run: az webapp deployment source config-zip -g rg-inboundprovisioning-poc-eus -n ${{secrets.APP_NAME}} --slot stage --src ${{env.DOTNET_ROOT}}/myapp/myapp.zip
          
   test:
     name: Smoke Test Staging Slot
